@@ -87,8 +87,7 @@ if uploaded_files is not None:
         awayGK = st.selectbox("Select Away Team's Goal Keeper name:", apnames, key='away_gk', index=None, on_change=reset_confirmed)
         if homeGK and awayGK:
             league_name = st.text_area('Write Competition Name', on_change=reset_confirmed)
-            if league_name:
-                match_input = st.button('Confirm', on_click=lambda: st.session_state.update({'confirmed': True}))
+            match_input = st.button('Confirm', on_click=lambda: st.session_state.update({'confirmed': True}))
    
     
 
