@@ -2441,6 +2441,8 @@ if uploaded_files is not None:
             fig.text(0.14, 0.97, f'in {hteamName} {hgoal_count} - {agoal_count} {ateamName}', 
                     fontsize=30, ha='left', va='center')
             
+            st.pyplot(fig)
+            
 
         player_list = df['name'].unique().tolist()
         pname = st.selectbox('Select Player', player_list, index=0)
